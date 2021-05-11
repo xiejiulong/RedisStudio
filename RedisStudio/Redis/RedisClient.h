@@ -1,5 +1,6 @@
 #ifndef RedisClient_INCLUDED
 #define RedisClient_INCLUDED
+#include <memory.h>
 
 #include "hiredis/hiredis.h"
 #include <list>
@@ -69,7 +70,7 @@ private:
     int           m_iDatabases;
     bool          m_bConnected;
     Base::Mutex         m_oMutex;
-    std::auto_ptr<RedisModelFactory> m_pModelFactory;
+    std::shared_ptr<RedisModelFactory> m_pModelFactory;
 };
 
 #endif

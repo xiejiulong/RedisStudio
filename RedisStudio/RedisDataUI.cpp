@@ -852,7 +852,7 @@ LRESULT RedisDataUI::OnDBAdd( HWND hwnd, WPARAM wParam, LPARAM lParam )
 
 LRESULT RedisDataUI::OnKeyAdd( HWND hwnd, WPARAM wParam, LPARAM lParam )
 {
-    std::auto_ptr<TreeKeyContactData> pData(reinterpret_cast<TreeKeyContactData*>(wParam));
+    std::shared_ptr<TreeKeyContactData> pData(reinterpret_cast<TreeKeyContactData*>(wParam));
     CTreeNodeUI* pPNode = pData->pPNode;
     CTreeNodeUI* pNode  = pData->pNode;
 

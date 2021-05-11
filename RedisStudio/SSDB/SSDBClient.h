@@ -1,6 +1,6 @@
 #ifndef SSDBClient_INCLUDED
 #define SSDBClient_INCLUDED
-
+#include <memory>
 #include "hiredis/hiredis.h"
 #include <list>
 #include <map>
@@ -73,7 +73,7 @@ private:
     bool          m_bConnected;
     
     Base::Mutex         m_oMutex;
-    std::auto_ptr<SSDBModelFactory> m_pModelFactory; 
+    std::shared_ptr<SSDBModelFactory> m_pModelFactory; 
 };
 
 #endif

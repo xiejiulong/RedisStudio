@@ -60,7 +60,7 @@ private:
 
     Base::Thread     m_Thread;
     Base::Event      m_Event;
-    std::auto_ptr< Base::RunnableAdapter<ConnInfoUI> > m_pWork;
+    std::shared_ptr< Base::RunnableAdapter<ConnInfoUI> > m_pWork;
 
 public:
     void BackgroundWork(void);

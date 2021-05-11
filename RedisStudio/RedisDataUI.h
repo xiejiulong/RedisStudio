@@ -1,5 +1,5 @@
 ﻿#pragma once
-
+#include <memory.h>
 #include "stdafx.h"
 #include <string>
 #include <set>
@@ -160,6 +160,6 @@ private:
     RedisDataStruct  m_oRedisData;
     Base::Thread     m_oThread;
     std::set<int>    m_setUpdateDbs;
-    std::auto_ptr< Base::RunnableAdapter<RedisDataUI> > m_pWork;
+    std::shared_ptr<Base::RunnableAdapter<RedisDataUI> > m_pWork;
     int              m_iDBIdx;
 };

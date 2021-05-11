@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+#include <string>
 #include "Base/Mutex.h"
 
 class DBClient;

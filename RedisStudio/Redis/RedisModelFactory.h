@@ -1,7 +1,7 @@
 ﻿#ifndef RedisModelFactory_INCLUDED
 #define RedisModelFactory_INCLUDED
 #include <map>
-
+#include <string>
 class RedisClient;
 class AbstractRedisModel;
 

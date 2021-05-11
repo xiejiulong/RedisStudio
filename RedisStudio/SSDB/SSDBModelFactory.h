@@ -1,6 +1,7 @@
 ﻿#ifndef SSDBModelFactory_INCLUDED
 #define SSDBModelFactory_INCLUDED
 #include <map>
+#include <string>
 
 namespace ssdb {
     class Client;
